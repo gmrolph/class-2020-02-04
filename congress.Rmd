@@ -1,0 +1,15 @@
+---
+title: "Congress"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(gov.1005.data)
+library(tidyverse)
+data("congress")
+congress %>% arrange(desc(age))
+```
